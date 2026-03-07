@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>玄荒道府</title>
+    <style>
+        /* 重置默认样式，避免边距干扰 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 页面整体布局：左侧导航 + 右侧内容 */
+        body {
+            font-family: "微软雅黑", sans-serif;
+            background-color: #f5f5f5;
+            display: flex; /* 弹性布局实现左右分栏 */
+            /* 新增的背景图代码 */
+            background-image: url(images/a1.jpg); /* 背景图路径，需替换为你的图片路径 */
+            background-size: clamp(100%, 80vw, 100%); /* 背景图覆盖整个页面 */
+            background-position: center; /* 背景图居中显示 */
+            background-repeat: no-repeat; /* 背景图不重复 */
+            background-attachment: scroll;
+            min-height: 150vh; 
+        }
+
+        /* 左侧导航栏样式 */
+        .sidebar {
+            width: 200px;
+            height: 150vh; /* 占满整个视口高度 */
+            background-color: rgba(44, 62, 80, 0.6); /* 0.8是透明度，0-1之间调整 */
+            padding-top: 50px;
+        }
+
+        /* 导航列表样式 */
+        .sidebar ul {
+            list-style: none; /* 去掉默认列表圆点 */
+        }
+
+        .sidebar li {
+            margin: 20px 0;
+        }
+
+        /* 导航链接样式 */
+        .sidebar a {
+            display: block; /* 让链接占满整个li，点击范围更大 */
+            color: white;
+            text-decoration: none; /* 去掉下划线 */
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: background-color 0.3s; /* 过渡效果，更丝滑 */
+        }
+
+        /* 鼠标悬停效果 */
+        .sidebar a:hover {
+            background-color: #34495e;
+        }
+
+        /* 右侧主内容区域 */
+        .main-content {
+            flex: 1; /* 占满剩余宽度 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+            margin-top: -50vh; 
+ 
+  
+        }
+        /* 主标题字体大小 */
+        .main-content h1 {
+            font-size: 36px; 
+        }
+        /* 按钮样式 */
+        #clickBtn {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #clickBtn:hover {
+            background-color: #33d65c;
+        }
+
+        /* 提示文本样式 */
+        #message {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- 左侧导航栏 -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="origin.html">天府起源</a></li>
+            <li><a href="seven-sages.html">天府七圣</a></li>
+            <li><a href="thirteen-clans.html">十三主脉</a></li>
+            <li><a href="heros.html">天府群英</a></li>
+            <li><a href="heritage.html">天府传承</a></li>
+            <li><a href="book.html">天元启世录</a></li>
+            <li><a href="poem.html">神域天府吟</a></li>
+        </ul>
+    </div>
+
+    <!-- 右侧主内容 -->
+    <div class="main-content">
+        <h1>繁星峥嵘而渐灭，浮华避世而逍遥</h1>
+        <button id="clickBtn">进入天府</button>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        const btn = document.getElementById('clickBtn');
+        const message = document.getElementById('message');
+
+        btn.addEventListener('click', function() {
+            /*message.textContent = '欢迎来到玄荒道府，天府道统的核心';*/
+            message.style.color = '#4285f4';
+            window.open('tianfu.html', '_blank');
+        });
+    </script>
+</body>
+</html>

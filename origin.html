@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>天府起源 - 玄荒道府</title>
+    <style>
+        body {
+            font-family: "微软雅黑", sans-serif;
+            background-color: #f5f5f5;
+            padding: 50px;
+            background-image: url(images/d1.png); /* 背景图路径 */
+            background-size: clamp(100%, 80vw, 100%);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            min-height: 130vh;
+            text-align: center;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* 透明度可调 */
+            z-index: -1;
+            pointer-events: none;
+        }
+        h1 {
+            color: #f5f6f8;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #f7f4f4;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>天府起源</h1>
+    <div class="content">
+        <p>玄荒道府始建于天元初代，由天府三圣石辰阳创立，初为天府高层聚集之所，后逐渐发展为神域第一道统。</p>
+        <p>玄荒道府是天府的核心，以庇佑天下苍生为核心理念，历经数千万载风雨，始终屹立于玄荒之巅，威震万世。</p>
+    </div>
+    <a href="Dao.html" class="back-btn">返回天府</a>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>神域天府吟</title>
+    <style>
+        body {
+            font-family: "微软雅黑", sans-serif;
+            background-color: #f5f5f5;
+            padding: 50px;
+            background-image: url(images/e1.png); /* 背景图路径 */
+            background-size: clamp(100%, 80vw, 100%);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            min-height: 150vh;
+            position: relative;
+            z-index: 0;
+            /* 新增：让body内所有内容水平居中 */
+            text-align: center;
+        }
+
+        /* 半透明黑色幕布（遮罩层） */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3); /* 透明度可调 */
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        h1 {
+            color: #f3f5f7;
+            text-align: center; /* 保留，双重保障居中 */
+            margin-bottom: 30px;
+            text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+        }
+        .sages-list {
+            max-width: 800px;
+            margin: 0 auto; /* 水平居中 */
+            font-size: 18px;
+            line-height: 2;
+            color: #f5f3f3;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px 30px;
+            border-radius: 8px;
+            /* 新增：让列表内文字居中 */
+            text-align: center;
+        }
+        /* 新增：让有序列表li也居中（解决默认左对齐问题） */
+        .sages-list ol {
+            list-style-position: inside; /* 序号和文字一起居中 */
+            padding-left: 0; /* 清除默认左内边距 */
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            /* 新增：按钮居中（依赖body的text-align: center） */
+            text-align: center;
+        }
+        .back-btn:hover {
+            background-color: #3367d6;
+        }
+    </style>
+</head>
+<body>
+    <h1>神域天府吟</h1>
+    <div class="sages-list">
+        <p>归元道人 阳辰</p>
+        <ol>
+           <p>苍茫古事出太玄，造化天府思归元</p>
+           <p>四象两仪陈精气，乾阳丹心为炼天</p>
+           <p>龙腾七圣立道府，志定八荒聚神源</p>
+           <p>余阳凡城得仙降，苍暮神迹望剑悬</p>
+           <p>楚水芒生九天曜，赤城劫起苍梧烟</p>
+           <p>天枢混沌沉星处，诸仙尽集展笑颜</p>
+           <p>天匠荆山欲铸鼎，神尊幻海心纵玄</p>
+           <p>玄机纶经通万载，星主英气御千年</p>
+           <p>奇谋归巧龙镜士，道法绝巅玉阳仙</p>
+           <p>玉仙春朝游破晓，鬼客秋夜梦孤寒</p>
+           <p>无边道隐藏剑意，永夜仙瑶梦云间</p>
+           <p>白衣出尘江枫落，朔刃森寒素剑旋</p>
+           <p>梦皇苍穹释天地，宗师玄气耀世篇</p>
+           <p>因果道引乾坤意，焚天焰生金刚言</p>
+           <p>无极六库生百策，圣邦万法镇云巅</p>
+           <p>真仙惊雷葬落叶，帝君阎令镇黄泉</p>
+           <p>仙名同吾才喷薄，神号大我念翩跹</p>
+           <p>绝域存王刀剑棘，三渡逢生问清涟</p>
+           <p>太平四都囷域广，冥古千狂黯灵颠</p>
+           <p>圣将天军兵甲锐，醍醐道老玄音绵</p>
+           <p>归尘迷途今何待，造化无感向山间</p>
+           <p>天暗揆星称无良，药尊炼世同昊天</p>
+           <p>和光一梦知百世，愁云一语诉千年</p>
+           <p>神机衍术开万古，道尊虚舟生星盘</p>
+           <p>缥缈虚风生楚水，轮回暮雪落千山</p>
+           <p>天府群英修神道，齐游万界战天潭</p>
+           <p>曾入九幽威炼狱，复至冥土惊忘川</p>
+           <p>诸雄豪气荡楚庭，天府威名震诸天</p>
+           <p>仙魔并驱神朝惧，元宗远征帝殿还</p>
+           <p>世事苍茫何所似，畴昔辉煌已经年</p>
+           <p>天府道统永不灭，再续神域前世缘</p>
+           <p>欲知天道语归处，苍生万物尽朝渊</p>
+           <p>天罡天玄天清士，天道重归天府前</p>
+        </ol>
+    </div>
+    <a href="Dao.html" class="back-btn">返回天府</a>
+</body>
+</html>
