@@ -1,4 +1,4 @@
-import{r as g}from"./index-wZJwFWEr.js";const l="Morven-Cyanus/Xuanhuan",m="xuanhuan-application",A=()=>{const o=g(!1),e=g(null),a=()=>localStorage.getItem("github_token");return{isLoading:o,error:e,createApplication:async t=>{const i=a();if(!i)throw new Error("GitHub Token 未配置。请先在管理后台配置 Token。");o.value=!0,e.value=null;try{const s=`[申请] ${t.daohao} - ${t.name}`,r=`
+import{r as g}from"./index-C8MVH7Cc.js";const l="Morven-Cyanus/Xuanhuan",m="xuanhuan-application",A=()=>{const o=g(!1),e=g(null),a=()=>localStorage.getItem("github_token");return{isLoading:o,error:e,createApplication:async t=>{const i=a();if(!i)throw new Error("把这个页面截图发送给天府七圣任意一人即可");o.value=!0,e.value=null;try{const s=`[申请] ${t.daohao} - ${t.name}`,r=`
 ## 加入申请
 
 **道号**: ${t.daohao}
